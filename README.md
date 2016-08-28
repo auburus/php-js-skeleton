@@ -21,7 +21,12 @@ tests/
     bootstrap.php
 
 bin/
+    install.php         # composer install, npm install, set permissions...
 views/
+    app.js
+    js/
+    sass/
+
 config/
     config.yml
     Migrations/
@@ -30,6 +35,9 @@ config/
 public/
     index.php
     img/
+    fonts/
+    js/
+    css/
 
 tmp/
 docker/
