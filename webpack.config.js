@@ -4,15 +4,19 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: ["./app/main.js"]
+    app: ["./app/main.js"],
   },
   output: {
     path: path.resolve(__dirname, "build"),
-    publicPath: "/assets/",
+    publicPath: "/",
     filename: "bundle.js"
   },
   module: {
     loaders: [
+      {
+        test: /\.html$/,
+        loader: 'html'
+      },
       {
         test: /\.twig$/,
         loader: 'twig'
