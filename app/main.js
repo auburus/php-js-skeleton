@@ -1,5 +1,4 @@
+//Require it just because I want the webserver to update
+//if this file changes.
 var template = require('./templates/index.html.twig');
-
 //var html = template({name: 'World'});
-console.log('bon dia');
-console.log('bona nit');
