@@ -2,3 +2,6 @@
 //if this file changes.
 var template = require('./templates/index.html.twig');
 //var html = template({name: 'World'});
+
+
+require('./sass/main.scss');

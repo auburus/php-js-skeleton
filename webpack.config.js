@@ -14,6 +14,10 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.scss$/,
+        loader: 'style!css!sass'
+      },
+      {
         test: /\.html$/,
         loader: 'html'
       },
@@ -29,6 +33,11 @@ module.exports = {
         test: /\.png$/,
         loader: 'file?mimetype=image/png'
       },
+    ]
+  },
+  sassLoader: {
+    includePaths: [
+      path.resolve(__dirname, "./app/sass")
     ]
   },
   plugins: [

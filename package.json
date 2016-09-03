@@ -5,9 +5,13 @@
   "main": "app/main.js",
   "dependencies": {},
   "devDependencies": {
+    "css-loader": "^0.24.0",
     "file-loader": "^0.9.0",
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.1",
+    "style-loader": "^0.13.1",
     "twig": "^0.9.5",
     "twig-loader": "^0.2.3",
     "url-loader": "^0.5.7",
