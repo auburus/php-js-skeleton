@@ -1,5 +1,7 @@
 var path = require("path");
 
+var twigVariables = require('./twigVariables.js');
+
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -23,7 +25,7 @@ module.exports = {
       },
       {
         test: /\.twig$/,
-        loader: 'twig'
+        loader: 'apply?{obj: ' + JSON.stringify(twigVariables) + '}!twig'
       },
       {
         test: /\.jpg$/,
